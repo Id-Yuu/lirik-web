@@ -1,4 +1,4 @@
-const backTopIcon = require("../assets/img/upArrow.png");
+import backTopIcon from "../assets/img/upArrow.png";
 
 class BackTop extends HTMLElement {
   constructor() {

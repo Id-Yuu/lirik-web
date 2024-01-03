@@ -1,4 +1,4 @@
-const axios = require("axios");
+import axios from "axios";
 const searchIcon = require("../assets/img/search.svg");
 
 class SearchLyrics extends HTMLElement {
