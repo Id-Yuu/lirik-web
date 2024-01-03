@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+// ColorHunt Palette
+// https://colorhunt.co/palette/404258474e6850577a6b728e
+$primary: #404258;
+$secondary: #474e68;
+$tertiary: #50577a;
+$quaternary: #6b728e;
+
+$white: #fff;
+$black: #000;
+
+a,
+a:visited {
+  color: $white;
+  text-decoration: none;
+}
+
+body {
+  background: $primary;
+  margin: 0;
+  padding: 0;
+  color: $quaternary;
+  font-family: "DM Sans", sans-serif;
+}
+
+#container {
+  max-width: 728px;
+  margin: 20px auto;
+  padding: 10px;
+  background-color: $secondary;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  back-top {
+    position: fixed;
+    bottom: 0;
+    right: 20px;
+    padding: 10px;
+  }
+}
+
+h1 {
+  color: $white;
+}
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+nav-bar {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  search-lirik {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    #searchForm {
+      display: flex;
+      gap: 10px;
+      justify-content: center;
+      input {
+        border: 1px solid $quaternary;
+        padding: 5px;
+        &:focus {
+          outline: none;
+          border: none;
+        }
+      }
+      button {
+        max-width: 35px;
+        max-height: 35px;
+        border: 1px solid $quaternary;
+        background-color: $white;
+        padding: 5px;
+        cursor: pointer;
+        img {
+          max-width: 20px;
+          max-height: 20px;
+        }
+      }
+    }
+  }
+  #listLirik {
+    .lyrics-item {
+      padding: 10px;
+      border: 1px solid;
+      margin: 10px auto;
+      h2,
+      p {
+        margin: 5px auto;
+      }
+      &:hover {
+        background-color: $tertiary;
+      }
+    }
+  }
+}
+
+trending-lirik {
+  color: $white;
+  dl {
+    padding: 10px;
+    border: 1px solid $quaternary;
+    line-height: 24px;
+  }
+  dt {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    font-size: 1.2em;
+  }
+  dd {
+    margin-left: 10px;
+    &::before {
+      content: "- ";
+    }
+    a {
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  #content {
+    padding: 10px;
+    border: 1px solid $quaternary;
+    line-height: 24px;
+    background-color: $tertiary;
+  }
+}
