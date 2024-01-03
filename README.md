@@ -8,6 +8,10 @@ Membuat Aplikasi Web dengan ES6, Custom Element, NPM, Module Bundler, dan AJAX
 git clone https://github.com/Id-Yuu/lirik-web.git
 ```
 
+```
+cd lirik-web
+```
+
 #### 1. Install with npm
 
 ```
